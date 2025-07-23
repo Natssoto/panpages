@@ -1,0 +1,931 @@
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cuestionario PAN</title>
+<style>
+    body {
+      background-color: #005baa; /* azul PAN */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 50px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: white;
+      color: #005baa;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    a:hover {
+      background-color: #003f7d;
+      color: white;
+    }
+
+  .question { margin-bottom: 20px; }
+  .answers label { display: block; margin-bottom: 5px; cursor: pointer; }
+  .result { margin-top: 10px; font-weight: bold; }
+  .correct { color: green; }
+  .incorrect { color: red; }
+  button { padding: 10px 20px; font-size: 16px; }
+</style>
+</head>
+<body>
+<body bg color=005baa>
+<font color=white>
+<h1>Cuestionario PAN</h1>
+
+<form id="quizForm">
+
+  <div class="question" data-correct="a">
+    <p>1. ¿Qué significa que la formación del PAN sea “humanista”?</p>
+    <div class="answers">
+      <label><input type="radio" name="q1" value="a" /> Que pone al centro a la persona humana, su dignidad y libertad, promoviendo la subsidiariedad, solidaridad, justicia y bien común.</label>
+      <label><input type="radio" name="q1" value="b" /> Que solo se enfoca en la política electoral y resultados pragmáticos.</label>
+      <label><input type="radio" name="q1" value="c" /> Que busca el control absoluto del gobierno sin participación ciudadana.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p>2. ¿Cuál es la importancia de la participación política de las mujeres según la guía?</p>
+    <div class="answers">
+      <label><input type="radio" name="q2" value="a" /> Solo es un requisito formal sin impacto real en la democracia.</label>
+      <label><input type="radio" name="q2" value="b" /> Fundamental para igualdad sustantiva y democracia paritaria con enfoque de derechos humanos.</label>
+      <label><input type="radio" name="q2" value="c" /> Se limita a espacios no decisorios dentro del partido.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p>3. ¿Cuáles son los principios de doctrina que identifican al PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q3" value="a" /> Dignidad de la persona, bien común, subsidiariedad, solidaridad, participación ciudadana, justicia y libertad.</label>
+      <label><input type="radio" name="q3" value="b" /> Control estatal absoluto y centralización política.</label>
+      <label><input type="radio" name="q3" value="c" /> Prioridad en beneficios económicos sin importar la justicia social.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p>4. ¿Qué artículo de los estatutos marca los requisitos para ser consejero nacional?</p>
+    <div class="answers">
+      <label><input type="radio" name="q4" value="a" /> Artículo 15</label>
+      <label><input type="radio" name="q4" value="b" /> Artículo 5</label>
+      <label><input type="radio" name="q4" value="c" /> Artículo 29</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p>5. ¿Qué experiencia previa se solicita a un aspirante al Consejo Nacional?</p>
+    <div class="answers">
+      <label><input type="radio" name="q5" value="a" /> Haber sido presidente municipal solamente.</label>
+      <label><input type="radio" name="q5" value="b" /> Haber sido parte de comité directivo o consejo estatal/nacional, candidato propietario o representante de casilla.</label>
+      <label><input type="radio" name="q5" value="c" /> No se requiere experiencia previa.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p>6. ¿Cuál es una causa de exclusión para participar en la elección del Consejo?</p>
+    <div class="answers">
+      <label><input type="radio" name="q6" value="a" /> Haber sido sancionado por la Comisión de Orden y Disciplina en los últimos tres años.</label>
+      <label><input type="radio" name="q6" value="b" /> No asistir a las reuniones del partido.</label>
+      <label><input type="radio" name="q6" value="c" /> No haber votado en elecciones anteriores.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="c">
+    <p>7. ¿Qué establece el artículo 63 de los Estatutos respecto al Consejo Estatal?</p>
+    <div class="answers">
+      <label><input type="radio" name="q7" value="a" /> Requisitos de edad y nacionalidad únicamente.</label>
+      <label><input type="radio" name="q7" value="b" /> Permite la reelección indefinida sin requisitos.</label>
+      <label><input type="radio" name="q7" value="c" /> Requisitos de militancia, ética, experiencia y no sanción/remoción en últimos tres años.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p>8. ¿Qué es el Consejo Nacional del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q8" value="a" /> El máximo órgano deliberativo entre asambleas que define estrategias políticas nacionales.</label>
+      <label><input type="radio" name="q8" value="b" /> Un órgano consultivo sin facultades de decisión.</label>
+      <label><input type="radio" name="q8" value="c" /> Una instancia local para resolver conflictos internos.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="b">
+    <p>9. ¿Qué rol tiene el Comité Ejecutivo Nacional en la evaluación?</p>
+    <div class="answers">
+      <label><input type="radio" name="q9" value="a" /> Ninguno, solo el Consejo Nacional realiza la evaluación.</label>
+      <label><input type="radio" name="q9" value="b" /> Organizar y aplicar la evaluación a través de instancias designadas.</label>
+      <label><input type="radio" name="q9" value="c" /> Solo evaluar resultados finales sin aplicar pruebas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+  <div class="question" data-correct="a">
+    <p>10. ¿Qué significa evaluar por competencias en el contexto del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q10" value="a" /> Medir conocimientos, habilidades prácticas, actitudes éticas y aplicación de principios.</label>
+      <label><input type="radio" name="q10" value="b" /> Solo medir conocimientos teóricos.</label>
+      <label><input type="radio" name="q10" value="c" /> Evaluar solo la participación en eventos del partido.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+ <div class="question" data-correct="b">
+    <p>11. ¿Qué implica la subsidiariedad como principio del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q11" value="a" /> Que el gobierno centraliza todas las decisiones.</label>
+      <label><input type="radio" name="q11" value="b" /> Que las decisiones deben tomarse en el nivel más cercano a las personas, respetando autonomía.</label>
+      <label><input type="radio" name="q11" value="c" /> Que solo los líderes tienen poder.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+ <div class="question" data-correct="b">
+    <p>12. ¿Cuál es la función de la Comisión de Orden y Disciplina?</p>
+    <div class="answers">
+      <label><input type="radio" name="q12" value="a" /> Planear campañas.</label>
+      <label><input type="radio" name="q12" value="b" /> Sancionar faltas y vigilar el cumplimiento de la normatividad interna del partido.</label>
+      <label><input type="radio" name="q12" value="c" /> Elegir candidatos.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>13. ¿Qué es la democracia paritaria?</p>
+    <div class="answers">
+      <label><input type="radio" name="q13" value="a" />Que solo los hombres pueden participar.</label>
+      <label><input type="radio" name="q13" value="b" />Que se garantiza igualdad de participación de mujeres y hombres en la toma de decisiones.</label>
+      <label><input type="radio" name="q13" value="c" />  Que solo se vota en asambleas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>14. ¿Qué porcentaje mínimo de representación deben tener las mujeres en candidaturas según el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q14" value="a" />30%.</label>
+      <label><input type="radio" name="q14" value="b" />40%.</label>
+      <label><input type="radio" name="q14" value="c" /> 50%.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>15. ¿Qué significa la solidaridad para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q15" value="a" />Apoyar a los demás en las dificultades, buscando el bienestar común.</label>
+      <label><input type="radio" name="q15" value="b" />Apoyar solo a los amigos, buscando su bienestar.</label>
+      <label><input type="radio" name="q15" value="c" />Buscar solo el beneficio propio.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>16. ¿Qué significa la solidaridad para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q16" value="a" />No es necesaria.</label>
+      <label><input type="radio" name="q16" value="b" />Es fundamental para fortalecer valores.</label>
+      <label><input type="radio" name="q16" value="c" /> Solo se hace para campañas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>17. ¿Qué documento oficial contiene los estatutos del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q17" value="a" />La Constitución Mexicana.</label>
+      <label><input type="radio" name="q17" value="b" />El Reglamento Electoral.</label>
+      <label><input type="radio" name="q17" value="c" /> Los Estatutos Nacionales del PAN.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>18. ¿Qué significa la participación ciudadana para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q18" value="a" />Votar en elecciones.</label>
+      <label><input type="radio" name="q18" value="b" />Involucrarse en procesos de toma de decisiones.</label>
+      <label><input type="radio" name="q18" value="c" />Manifestarse.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="c">
+    <p>19. ¿Cuál es el periodo para el que se eligen los consejeros nacionales?</p>
+    <div class="answers">
+      <label><input type="radio" name="q19" value="a" />1 año.</label>
+      <label><input type="radio" name="q19" value="b" /> 2 años.</label>
+      <label><input type="radio" name="q19" value="c" />3 años.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>20. ¿Qué es un representante propietario ante el Consejo?</p>
+    <div class="answers">
+      <label><input type="radio" name="q20" value="a" />Un suplente.</label>
+      <label><input type="radio" name="q20" value="b" />Un miembro titular con derecho a voto en el Consejo.</label>
+      <label><input type="radio" name="q20" value="c" />Un asesor externo.
+</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>21. ¿Cuál es la función principal del Consejo Estatal?</p>
+    <div class="answers">
+      <label><input type="radio" name="q21" value="a" />Organizar eventos sociales.</label>
+      <label><input type="radio" name="q21" value="b" />Vigilar la aplicación de los estatutos y supervisar comités municipales en su estado.</label>
+      <label><input type="radio" name="q21" value="c" />Gestionar recursos económicos.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="a">
+    <p>22. ¿Cuál es el periodo para el que se eligen los consejeros nacionales?</p>
+    <div class="answers">
+      <label><input type="radio" name="q22" value="a" />Conocimiento, experiencia política y no haber sido sancionado. </label>
+      <label><input type="radio" name="q22" value="b" />Haber pagado una cuota.</label>
+      <label><input type="radio" name="q22" value="c" />Haber sido presidente municipal.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="b">
+    <p>23. ¿Qué es la dignidad humana para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q23" value="a" />Un valor secundario.</label>
+      <label><input type="radio" name="q23" value="b" />El respeto fundamental a cada persona como base para la justicia social.</label>
+      <label><input type="radio" name="q23" value="c" /> Una idea filosófica.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>24. ¿Qué es el bien común en la doctrina del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q24" value="a" />Beneficio individual.</label>
+      <label><input type="radio" name="q24" value="b" /> Un programa de gobierno.</label>
+      <label><input type="radio" name="q24" value="c" />Lo que beneficia a la mayoría, promoviendo la justicia y equidad social. </label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="b">
+    <p>25. ¿Qué significa la justicia para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q25" value="a" />Castigar a los opositores.</label>
+      <label><input type="radio" name="q25" value="b" />Garantizar igualdad de oportunidades y respeto a derechos. </label>
+      <label><input type="radio" name="q25" value="c" />Defender solo a los militantes.
+.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>26. ¿Qué es la libertad para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q26" value="a" />La capacidad de actuar conforme a la verdad y la justicia.</label>
+      <label><input type="radio" name="q26" value="b" />Libertad económica sin regulación.</label>
+      <label><input type="radio" name="q26" value="c" />Libertad sin responsabilidad.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="a">
+    <p>27. ¿Qué es la autonomía en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q27" value="a" />Independencia de cada persona y organización para tomar decisiones.</label>
+      <label><input type="radio" name="q27" value="b" />Desobediencia a la ley.</label>
+      <label><input type="radio" name="q27" value="c" />Independencia económica solamente.
+</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="a">
+    <p>28.¿Qué es la solidaridad en la doctrina del PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q28" value="a" />Apoyo mutuo para superar dificultades y construir sociedad justa.</label>
+      <label><input type="radio" name="q28" value="b" />Ignorar problemas sociales.</label>
+      <label><input type="radio" name="q28" value="c" />Beneficio personal.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>29. ¿Qué busca el PAN con la formación política?</p>
+    <div class="answers">
+      <label><input type="radio" name="q29" value="a" /> Crear seguidores.</label>
+      <label><input type="radio" name="q29" value="b" /> Formar ciudadanos críticos.</label>
+      <label><input type="radio" name="q29" value="c" />Controlar a los militantes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>30. ¿Qué papel juega el voto en la democracia según el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q30" value="a" />Es una obligación sin importancia.</label>
+      <label><input type="radio" name="q30" value="b" /> Solo una formalidad.</label>
+      <label><input type="radio" name="q30" value="c" />Es la herramienta principal para la participación ciudadana y legitimación de autoridades. </label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>31. ¿Qué importancia tiene el respeto a la ley en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q31" value="a" />Se puede ignorar.</label>
+      <label><input type="radio" name="q31" value="b" /> Solo para los funcionarios.</label>
+      <label><input type="radio" name="q31" value="c" />Es fundamental para el orden, justicia y democracia.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>32. ¿Cuál es la postura del PAN respecto a los derechos humanos?</p>
+    <div class="answers">
+      <label><input type="radio" name="q32" value="a" />Son fundamentales e inviolables.</label>
+      <label><input type="radio" name="q32" value="b" />Solo para ciudadanos.</label>
+      <label><input type="radio" name="q32" value="c" />Solo para militantes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>33.¿Qué significa la responsabilidad en la militancia PANista?</p>
+    <div class="answers">
+      <label><input type="radio" name="q33" value="a" />Cumplir obligaciones, respetar normas y trabajar por el partido y país. </label>
+      <label><input type="radio" name="q33" value="b" />Solo asistir a eventos.</label>
+      <label><input type="radio" name="q33" value="c" />Delegar tareas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="b">
+    <p>34. ¿Qué es la participación ciudadana responsable?</p>
+    <div class="answers">
+      <label><input type="radio" name="q34" value="a" /> Votar sin informarse.</label>
+      <label><input type="radio" name="q34" value="b" /> Involucrarse activamente y respetar normas. </label>
+      <label><input type="radio" name="q34" value="c" /> Criticar sin participar.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>35. ¿Cuál es el objetivo de la evaluación para aspirantes a consejeros?</p>
+    <div class="answers">
+      <label><input type="radio" name="q" value="a" />Seleccionar al más popular.</label>
+      <label><input type="radio" name="q" value="b" />Medir conocimientos, valores y experiencia.</label>
+      <label><input type="radio" name="q" value="c" />Solo cumplir requisitos formales.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>36. ¿Qué implica la igualdad sustantiva?</p>
+    <div class="answers">
+      <label><input type="radio" name="q36" value="a" /> Igualdad formal sin acción afirmativa.</label>
+      <label><input type="radio" name="q36" value="b" />Igualdad solo en leyes.</label>
+      <label><input type="radio" name="q36" value="c" /> Igualdad real y efectiva con acciones para eliminar desigualdades.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>37. ¿Qué significa la ética partidista?</p>
+    <div class="answers">
+      <label><input type="radio" name="q37" value="a" />Actuar con honestidad, respeto y compromiso con los principios del partido.</label>
+      <label><input type="radio" name="q37" value="b" />Seguir órdenes sin cuestionar.</label>
+      <label><input type="radio" name="q37" value="c" />Buscar beneficio personal.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>38. ¿Qué son las cuotas partidistas?</p>
+    <div class="answers">
+      <label><input type="radio" name="q38" value="a" />Pagos voluntarios sin importancia.</label>
+      <label><input type="radio" name="q38" value="b" />Aportaciones económicas para sostener al partido.</label>
+      <label><input type="radio" name="q38" value="c" />Donaciones externas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>39.¿Qué es la transparencia en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q39" value="a" />Dar información clara, veraz y oportuna.</label>
+      <label><input type="radio" name="q39" value="b" />No informar.</label>
+      <label><input type="radio" name="q39" value="c" />Dar datos.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="">
+    <p>40. ¿Qué significa la rendición de cuentas?</p>
+    <div class="answers">
+      <label><input type="radio" name="q40" value="a" />Explicar y justificar acciones y uso de recursos ante militantes y ciudadanos.</label>
+      <label><input type="radio" name="q40" value="b" />Ignorar críticas.</label>
+      <label><input type="radio" name="q40" value="c" />Solo informar a líderes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+
+
+
+
+
+
+<div class="question" data-correct="b">
+    <p>41. ¿Qué es un Comité Directivo Municipal en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q41" value="a" />Un grupo de militantes sin funciones.</label>
+      <label><input type="radio" name="q41" value="b" />Órgano ejecutivo local que dirige y coordina actividades del partido en un municipio.</label>
+      <label><input type="radio" name="q41" value="c" />Solo un comité de apoyo en campañas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="b">
+    <p>42.¿Cuál es la función del Consejo Nacional en materia electoral?</p>
+    <div class="answers">
+      <label><input type="radio" name="q42" value="a" />Organizar las elecciones nacionales del país.</label>
+      <label><input type="radio" name="q42" value="b" />Elegir a candidatos y aprobar criterios para procesos electorales internos.</label>
+      <label><input type="radio" name="q42" value="c" />Solo promueve campañas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>43. ¿Qué requisito es indispensable para ser candidato a algún cargo público por el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q43" value="a" />Ser militante activo y cumplir con los estatutos.</label>
+      <label><input type="radio" name="q43" value="b" />Ser amigo del presidente del partido.</label>
+      <label><input type="radio" name="q43" value="c" />Tener experiencia.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>44. ¿Qué significa el principio de legalidad en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q44" value="a" />Que se pueden hacer excepciones.</label>
+      <label><input type="radio" name="q44" value="b" />Que todas las acciones deben ajustarse a la ley y estatutos del partido.</label>
+      <label><input type="radio" name="q44" value="c" />Que el partido puede decidir arbitrariamente.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>45. ¿Qué es la justicia social para el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q45" value="a" />Que solo los ricos tengan privilegios.</label>
+      <label><input type="radio" name="q45" value="b" />La búsqueda de igualdad y oportunidades para todos en la sociedad.</label>
+      <label><input type="radio" name="q45" value="c" />Beneficiar a un grupo reducido.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>46. ¿Qué es el Comité Ejecutivo Nacional (CEN)?</p>
+    <div class="answers">
+      <label><input type="radio" name="q46" value="a" />El órgano de dirección y administración superior del PAN.</label>
+      <label><input type="radio" name="q46" value="b" />Un comité local.</label>
+      <label><input type="radio" name="q46" value="c" />Un grupo de simpatizantes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>47. ¿Qué significa la democracia representativa en el PAN?</p>
+    <div class="answers">
+      <label><input type="radio" name="q47" value="a" />Que solo un líder decide todo.</label>
+      <label><input type="radio" name="q47" value="b" />Que la democracia es solo un lema.</label>
+      <label><input type="radio" name="q47" value="c" />Que los ciudadanos eligen representantes para tomar decisiones políticas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>48. ¿Cuál es el rol del militante activo?</p>
+    <div class="answers">
+      <label><input type="radio" name="q48" value="a" />Solo asistir a eventos.</label>
+      <label><input type="radio" name="q48" value="b" />Participar, promover valores del partido y contribuir a su crecimiento. </label>
+      <label><input type="radio" name="q48" value="c" />Solo pagar cuotas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>49.¿Qué es el Código de Ética del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q49" value="a" />Un conjunto de reglas para la conducta de militantes y dirigentes.</label>
+      <label><input type="radio" name="q49" value="b" />Un documento opcional.</label>
+      <label><input type="radio" name="q49" value="c" />Un reglamento legal externo.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>50.¿Cuál es el objetivo de los principios rectores del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q50" value="a" />Guiar la acción política y la conducta interna de sus miembros.</label>
+      <label><input type="radio" name="q50" value="b" />Solo decorar documentos.</label>
+      <label><input type="radio" name="q50" value="c" />Son reglas para campañas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>51.¿Qué es el bien común en el contexto del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q51" value="a" />El beneficio de unos pocos.</label>
+      <label><input type="radio" name="q51" value="b" /> El bienestar y desarrollo equitativo de toda la sociedad.</label>
+      <label><input type="radio" name="q51" value="c" />La acumulación de poder.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>52.¿Qué es la transparencia financiera en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q52" value="a" />Mostrar de manera clara y pública la administración de recursos.</label>
+      <label><input type="radio" name="q52" value="b" />Solo informar a líderes.</label>
+      <label><input type="radio" name="q52" value="c" />Ocultar gastos del partido.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>53.Qué significa el principio de subsidiariedad? </p>
+    <div class="answers">
+      <label><input type="radio" name="q53" value="a" />Que el partido centraliza todo.</label>
+      <label><input type="radio" name="q53" value="b" />Que las decisiones deben tomarse en el nivel más cercano posible a las personas afectadas. </label>
+      <label><input type="radio" name="q53" value="c" />Que solo el CEN decide.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>54.¿Qué papel tiene el militante en la defensa de los principios del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q54" value="a" />Ninguno.</label>
+      <label><input type="radio" name="q54" value="b" />Solo participar en campañas.</label>
+      <label><input type="radio" name="q54" value="c" />Ser ejemplo y vigilar que se respeten los valores y estatutos.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>55.¿Qué significa la equidad en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q55" value="a" />Que todos tengan lo mismo sin importar necesidades.</label>
+      <label><input type="radio" name="q55" value="b" />Que no hay diferencias.</label>
+      <label><input type="radio" name="q55" value="c" />Que se reconozcan y atiendan las diferencias para garantizar igualdad real.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>56.¿Qué es la participación política responsable? </p>
+    <div class="answers">
+      <label><input type="radio" name="q56" value="a" />Tomar decisiones informadas y respetar las reglas democráticas.</label>
+      <label><input type="radio" name="q56" value="b" />Solo votar.</label>
+      <label><input type="radio" name="q56" value="c" />Participar sin compromiso.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>57.¿Qué función tiene la Comisión de Organización del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q57" value="a" />Coordinar eventos sociales.</label>
+      <label><input type="radio" name="q57" value="b" />Planear y organizar procesos electorales internos y actividades partidistas.</label>
+      <label><input type="radio" name="q57" value="c" />Solo apoyar campañas.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>58.¿Qué significa la pluralidad en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q58" value="a" />Que solo hay una opinión válida.</label>
+      <label><input type="radio" name="q58" value="b" />Reconocer y respetar diversas opiniones y posturas dentro del partido. </label>
+      <label><input type="radio" name="q58" value="c" />Homogeneidad total.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>59.¿Cuál es el objetivo de la capacitación en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q59" value="a" /> Fortalecer conocimientos, valores y habilidades políticas.</label>
+      <label><input type="radio" name="q59" value="b" />Solo aprender discursos.</label>
+      <label><input type="radio" name="q59" value="c" />Solo para líderes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>60.¿Qué es la rendición de cuentas en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q60" value="a" />Justificar el uso de recursos y decisiones ante militantes y la sociedad.</label>
+      <label><input type="radio" name="q60" value="b" />Evadir responsabilidades.</label>
+      <label><input type="radio" name="q60" value="c" />Solo informar a autoridades.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>61.¿Cuál es la función del Comité Directivo Estatal? </p>
+    <div class="answers">
+      <label><input type="radio" name="q61" value="a" />Organizar fiestas.</label>
+      <label><input type="radio" name="q61" value="b" />Dirigir y coordinar actividades del partido en un estado.</label>
+      <label><input type="radio" name="q61" value="c" />No tiene funciones.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>62.¿Qué significa la justicia electoral en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q62" value="a" />Que solo ganen ciertos candidatos.</label>
+      <label><input type="radio" name="q62" value="b" />Que los procesos electorales internos sean justos, transparentes y democráticos.</label>
+      <label><input type="radio" name="q62" value="c" />Que no se realicen elecciones.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>63.¿Qué es un militante activo? </p>
+    <div class="answers">
+      <label><input type="radio" name="q63" value="a" />Un simpatizante que no participa.</label>
+      <label><input type="radio" name="q63" value="b" />Una persona inscrita que cumple con obligaciones y participa en actividades partidistas.</label>
+      <label><input type="radio" name="q63" value="c" />Un simpatizante externo.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>64.¿Qué es el Comité Municipal? </p>
+    <div class="answers">
+      <label><input type="radio" name="q64" value="a" />El órgano de dirección local del PAN en un municipio.</label>
+      <label><input type="radio" name="q64" value="b" />Un comité temporal.</label>
+      <label><input type="radio" name="q64" value="c" />Solo apoyo externo.
+</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="c">
+    <p>65.¿Qué debe hacer un consejero nacional? </p>
+    <div class="answers">
+      <label><input type="radio" name="q65" value="a" />Solo votar cuando se le pida.</label>
+      <label><input type="radio" name="q65" value="b" />Solo representar sin voz.</label>
+      <label><input type="radio" name="q65" value="c" />Asistir a reuniones y participar en la toma de decisiones del partido.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="a">
+    <p>66.¿Qué es la ética en la política para el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q66" value="a" /> Cumplir con valores morales y responsabilidad en el ejercicio político. </label>
+      <label><input type="radio" name="q66" value="b" />Hacer lo que sea para ganar.</label>
+      <label><input type="radio" name="q66" value="c" />Buscar beneficio propio.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>67.¿Qué significa la inclusión en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q67" value="a" />Que solo algunos pueden participar.</label>
+      <label><input type="radio" name="q67" value="b" />Que todas las personas, sin distinción, pueden integrarse y participar activamente.</label>
+      <label><input type="radio" name="q67" value="c" />Solo admitir simpatizantes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>68.¿Qué es el Consejo Estatal? </p>
+    <div class="answers">
+      <label><input type="radio" name="q68" value="a" />Un grupo de apoyo sin funciones.</label>
+      <label><input type="radio" name="q68" value="b" />Órgano de supervisión y toma de decisiones en un estado para el PAN.</label>
+      <label><input type="radio" name="q68" value="c" />Un comité nacional.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>69.¿Qué importancia tiene la capacitación continua? </p>
+    <div class="answers">
+      <label><input type="radio" name="q69" value="a" />No es necesaria.</label>
+      <label><input type="radio" name="q69" value="b" />Es fundamental para mantener vigentes conocimientos y fortalecer la militancia.</label>
+      <label><input type="radio" name="q69" value="c" />Solo para nuevos militantes.</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="">
+    <p>70.¿Qué significa la solidaridad política? </p>
+    <div class="answers">
+      <label><input type="radio" name="q70" value="a" />Apoyar solo intereses personales.</label>
+      <label><input type="radio" name="q70" value="b" />Trabajar juntos para alcanzar objetivos comunes y apoyar a compañeros.</label>
+      <label><input type="radio" name="q70" value="c" />Competir sin cooperación.
+</label>
+    </div>
+    <div class="result"></div>
+  </div>
+
+
+<div class="question" data-correct="b">
+    <p>71.¿Qué es la democracia interna en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q71" value="a" />Que solo el líder decide.</label>
+      <label><input type="radio" name="q71" value="b" />Que los militantes tienen voz y voto en decisiones y procesos internos.</label>
+      <label><input type="radio" name="q71" value="c" />Que se imponen decisiones.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="b">
+    <p>72.¿Qué es la justicia interna del partido? </p>
+    <div class="answers">
+      <label><input type="radio" name="q72" value="a" />Castigar solo a opositores.</label>
+      <label><input type="radio" name="q72" value="b" />Aplicar normas y sanciones para mantener disciplina y respeto a estatutos.</label>
+      <label><input type="radio" name="q72" value="c" />No tiene importancia.</div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>73.¿Cuál es el rol del presidente del PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q73" value="a" />  Organizar eventos sociales.</label>
+      <label><input type="radio" name="q73" value="b" />Dirigir, representar y conducir al partido a nivel nacional.</label>
+      <label><input type="radio" name="q73" value="c" />Solo asesorar.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="a">
+    <p>74.¿Qué papel tiene la mujer en el PAN? </p>
+    <div class="answers">
+      <label><input type="radio" name="q74" value="a" /> Participar en igualdad de condiciones y ocupar cargos de decisión.</label>
+      <label><input type="radio" name="q74" value="b" />Solo apoyar en actividades externas.</label>
+      <label><input type="radio" name="q74" value="c" />No tiene participación política.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="b">
+    <p>75.¿Qué significa la transparencia en las elecciones internas? </p>
+    <div class="answers">
+      <label><input type="radio" name="q75" value="a" />Que solo algunos conocen resultados.</label>
+      <label><input type="radio" name="q75" value="b" />Que los procesos sean claros, abiertos y verificables.</label>
+      <label><input type="radio" name="q75" value="c" />Que se ocultan resultados.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="a">
+    <p>76.¿Qué es la militancia responsable? </p>
+    <div class="answers">
+      <label><input type="radio" name="q76" value="a" />Cumplir obligaciones y promover principios del partido.</label>
+      <label><input type="radio" name="q76" value="b" />Asistir solo a reuniones sociales.</label>
+      <label><input type="radio" name="q76" value="c" />No tiene responsabilidades.</div>
+    <div class="result"></div>
+  </div>
+
+<div class="question" data-correct="b">
+    <p>77.¿Qué es la democracia participativa? </p>
+    <div class="answers">
+      <label><input type="radio" name="q77" value="a" />Que solo voten los líderes.</label>
+      <label><input type="radio" name="q77" value="b" />Que todos los ciudadanos se involucren activamente en la toma de decisiones.</label>
+      <label><input type="radio" name="q77" value="c" />Que se impongan las decisiones.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+
+<div class="question" data-correct="c">
+    <p>78.¿Cuál es el objetivo de la formación política para mujeres? </p>
+    <div class="answers">
+      <label><input type="radio" name="q78" value="a" />Solo para asistir a eventos.</label>
+      <label><input type="radio" name="q78" value="b" />Solo apoyo administrativo.</label>
+      <label><input type="radio" name="q78" value="c" />Fortalecer su liderazgo y participación en igualdad de condiciones.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="b">
+    <p>79.¿Qué es el principio de legalidad interna? </p>
+    <div class="answers">
+      <label><input type="radio" name="q79" value="a" /> Que solo algunos deben respetar la ley.</label>
+      <label><input type="radio" name="q79" value="b" />Que todos los miembros y órganos del partido deben actuar conforme a los estatutos y reglamentos.</label>
+      <label><input type="radio" name="q79" value="c" />Que se puede incumplir normas.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+<div class="question" data-correct="b">
+    <p>80.¿Qué significa la justicia distributiva? </p>
+    <div class="answers">
+      <label><input type="radio" name="q" value="a" />Distribuir recursos sin criterio.</label>
+      <label><input type="radio" name="q" value="b" /> Repartir recursos y oportunidades de manera equitativa.</label>
+      <label><input type="radio" name="q" value="c" />Dar todo a unos pocos.</div>
+    <div class="result"></div>
+  </div>
+
+
+
+  <button type="button" onclick="checkAnswers()">Verificar respuestas</button>
+
+</form>
+
+<script>
+function checkAnswers() {
+  const questions = document.querySelectorAll('.question');
+  let correctCount = 0;
+
+  questions.forEach((question, index) => {
+    const selected = question.querySelector('input[type=radio]:checked');
+    const resultDiv = question.querySelector('.result');
+    if (!selected) {
+      resultDiv.textContent = 'Por favor, selecciona una opción.';
+      resultDiv.className = 'result incorrect';
+      return;
+    }
+    if (selected.value === question.getAttribute('data-correct')) {
+      resultDiv.textContent = '✅ Correcto';
+      resultDiv.className = 'result correct';
+      correctCount++;
+    } else {
+      const correctValue = question.getAttribute('data-correct');
+      const correctLabel = [...question.querySelectorAll('input[type=radio]')].find(i => i.value === correctValue).parentElement.textContent;
+      resultDiv.textContent = '❌ Incorrecto. La respuesta correcta es: ' + correctLabel.trim();
+      resultDiv.className = 'result incorrect';
+    }
+  });
+
+  alert(`Tu puntuación es ${correctCount} de ${questions.length}`);
+}
+</script>
+ 
+<a href="inicio.html">Regresa al inicio</a>
+</body>
+</html>
+
+
